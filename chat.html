@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Tecnologia</title>
+  <link rel="stylesheet" href="src/styles/chat.css" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <h2>CHATBOT</h2>
+    </div>
+  </header>
+
+  <main>
+    <h1>O que gostaria de saber sobre tecnologia?</h1>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Como posso ajudar hoje?" />
+      <button id="sendBtn">↑</button>
+    </div>
+  </main>
+
+  <script>
+    const input = document.getElementById("userInput");
+    const button = document.getElementById("sendBtn");
+
+    button.addEventListener("click", () => {
+      const userText = input.value.trim();
+      if (userText) {
+        alert("Você perguntou: " + userText);
+        input.value = "";
+      }
+    });
+  </script>
+  
+<script src="src/javascript/chat.js"></script>
+</body>
+</html>
