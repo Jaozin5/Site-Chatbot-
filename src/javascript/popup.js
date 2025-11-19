@@ -2,8 +2,8 @@
 import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 
 Chatbot.init({
-  chatflowid: "14cc535e-81a2-4c48-a4dd-d119a5d28fe2",
-  apiHost: "http://localhost:3000",
+  chatflowid: "c8af6340-b6de-4d0d-84fb-3d185af79645",
+  apiHost: "https://flowise-chatbot-9q7s.onrender.com",
 
   theme: {
     button: {
@@ -27,7 +27,7 @@ Chatbot.init({
       tooltipTextColor: 'white',
       tooltipFontSize: 16
     },
-    disclaimer: {
+/*    disclaimer: {
       title: 'Assistente',
       message: "By using this chatbot, you agree to the <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terms & Condition</a>",
       textColor: 'black',
@@ -36,20 +36,20 @@ Chatbot.init({
       buttonTextColor: 'white',
       blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
       backgroundColor: 'white'
-    },
+    },*/
     chatWindow: {
       showTitle: true,
       showAgentMessages: true,
       title: 'Flowise Bot',
       titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-      welcomeMessage: 'Olá, eu sou o chatbot',
+      welcomeMessage: 'Olá, eu sou a Nina, sua Assistente Virtual',
       errorMessage: 'Algo deu errado. Tente novamente',
       backgroundColor: '#ffffff',
       height: 700,
       width: 400,
       fontSize: 16,
       starterPrompts: [
-        "O que é um chatbot?",
+        "O que você pode fazer?",
         "Quem é você?"
       ],
       botMessage: {
@@ -70,7 +70,7 @@ Chatbot.init({
         textColor: '#303235',
         sendButtonColor: '#3B81F6',
         maxChars: 50,
-        maxCharsWarningMessage: 'Vcê excedeu o limite de caracteres.',
+        maxCharsWarningMessage: 'Você excedeu o limite de caracteres.',
         autoFocus: true
       },
       footer: {
@@ -82,3 +82,4 @@ Chatbot.init({
     }
   }
 })
+
