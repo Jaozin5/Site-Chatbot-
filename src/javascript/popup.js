@@ -22,7 +22,7 @@ Chatbot.init({
     },
     tooltip: {
       showTooltip: true,
-      tooltipMessage: 'Olá, posso te ajudar? 👋!',
+      tooltipMessage: 'Olá 👋!',
       tooltipBackgroundColor: 'black',
       tooltipTextColor: 'white',
       tooltipFontSize: 16
@@ -82,5 +82,6 @@ Chatbot.init({
     }
   }
 })
+
 
 
